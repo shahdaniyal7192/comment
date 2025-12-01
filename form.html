@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>
+            <label>first name</label>
+            <input type="text" name="fn" placeholder="first name" autocomplete="off">
+
+        </p>
+        <p>
+
+            <label>last name</label>
+            <input type="text" name="LN" placeholder="Last name"  >
+        </p>
+        <p>
+            <label>age</label>
+            <input type="number" name="age" min="0" max="100"  step="4" />
+
+        </p>
+        <p>
+            <label>Gender</label>
+            <input type="radio" name="Gender" /><label>male</label>
+            <input type="radio" name="Gender" /><label>Male</label>
+
+        </p>
+        <p>
+            <label>DOB</label>
+            <input type="date" name="DOB" min="1950-01-01" max="2025-10-01" />
+
+        </p>
+        <p>
+            <label>Contact</label>
+            <input type="tel" name="CN" />
+        </p>
+        <P>
+            <Label>Password</Label>
+            <input type="password" name="password" />
+
+        </P>
+        <p>
+            <label>Qualification:</label>
+            <input type="checkbox" name="matric" /><label>Matriculation</label>
+            <input type="checkbox" name="inter" /><label>Intermediate</label>
+            <input type="checkbox" name="Bachelors" /><label>Bachelors</label>
+        </p>
+        <p>
+            <label>Courses</label>
+            <select name="Courses">
+                <option selected disabled>Select Course</option>
+                <option>Ms office</option>
+                <option>HTML</option>
+                <option>SEO</option>
+
+            </select>
+
+
+        </p>
+        <P>
+            <Label>Upload file(s):</Label>
+            <input type="file" name="Upload_files" multiple />  
+        </P>
+        <p>
+            <label>Colors</label>
+            <input type="color" name="search">
+        </p>
+        <p>
+            <textarea  cols="60" rows="7" Enter feedback here></textarea>
+        </p>
+        <p>
+            <label>Email</label>
+            <input type="email" name="Email">
+
+        </p>
+        <input type="submit" name="submit">
+    </form>
+
+    
+</body>
+</html>

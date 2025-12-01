@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    body{
+        background: blanchedalmond;
+    }
+    .main{
+        background: rgb(1, 247, 234);
+        position: relative;
+        height: 100px;
+        width: 350px;
+        text-align: center;
+        top: 20px;
+        left: 35%;
+        border-radius: 20px;
+    }
+    .main h1{
+        color: cornsilk;
+        top: 30px;
+        position: relative;
+    }
+    .btn-hide{
+        background-color: cornsilk;
+        position: relative;
+        width: 80px;
+        left: 30px;
+        top: 40px;
+    }
+    .btn-show{
+        background-color: rgb(5, 105, 145);
+        position: relative;
+        width: 80px;
+        left: 40px;
+        top: 40px;
+    }
+    .btn-toggle{
+        background-color: rgb(241, 95, 205);
+        position: relative;
+        width: 80px;
+        left: 50px;
+        top: 40px;
+    }
+    .btn-fade-in{
+        background-color: rgb(204, 250, 96);
+        position: relative;
+        width: 80px;
+        left: 60px;
+        top: 40px;
+    }
+    .btn-fade-out{
+        background-color: rgb(14, 235, 69);
+        position: relative;
+        width: 80px;
+        left: 70px;
+        top: 40px;
+    }
+    .btn-fade-toggle{
+        background-color: rgb(0, 104, 130);
+        position: relative;
+        width: 90px;
+        left: 80px;
+        top: 40px;
+    }
+    .btn-side-up{
+         background-color: rgb(153, 17, 135);
+        position: relative;
+        width: 90px;
+        left: 80px;
+        top: 40px;
+    }
+     .btn-side-down{
+         background-color: rgb(70, 32, 65);
+        position: relative;
+        width: 90px;
+        left: 80px;
+        top: 40px;
+    }
+        .btn-side-toggle{
+         background-color: rgb(23, 151, 92);
+        position: relative;
+        width: 90px;
+        left: 80px;
+        top: 40px;
+    }
+    .text-para{
+        color: black;
+        position: relative;
+        top: 50px;
+    }
+    .btn-change{
+        position: relative;
+        top: 40px;
+        background-color: blueviolet;
+    }
+    .text-bold{
+        color: black;
+        position: relative;
+        top: 50px;
+    }
+    .btn-change-html{
+        position: relative;
+        top: 40px;
+        background-color: aqua;
+    }
+    .inp-field{
+        top: 40px;
+        position: relative;
+    }
+    .alert{
+        position: relative;
+        top: 40px;
+        background-color: bisque;
+    }
+    .my-pic{
+        height: 95px;
+        width: 80px;
+        position: relative;
+        right: 55px;
+    }
+    .pic-btn{
+        background-color: azure;
+        position: relative;
+        right: 145px;
+        top: 20px;
+    }
+    .demo{
+        position: relative;
+        left: 50px;
+        top: 190px;
+    }
+    .class-btn{
+        background-color: beige;
+        position: relative;
+        top: 100px;
+        left: 30px;
+    }
+    .add-btn{
+        position: relative;
+        top: 280px;
+        left: 30px;
+        background-color: azure;
+    }
+    .green{
+        color: aqua;
+    }
+    .list{
+        position: relative;
+        top: 330px;
+    }
+
+</style>
+<body>
+    <div class="main"><h1>This is main div</h1></div>
+    <button class="btn-hide">Hide</button>
+    <button class="btn-show">Show</button>
+    <button class="btn-toggle">Toggle</button>
+    <button class="btn-fade-in">Fade in</button>
+    <button class="btn-fade-out">Fade out</button>
+    <button class="btn-fade-toggle">Fade toggle</button>
+    <button class="btn-side-up">Side up</button>
+    <button class="btn-side-down">Side Down</button>
+    <button class="btn-side-toggle">Side Toggle</button>
+
+    <p class="text-para">Hello World</p>
+    <button class="btn-change">Change Text</button>
+    <p class="text-bold"><b>Hello World</b></p>
+    <button class="btn-change-html">Change Html</button><br><br>
+    <input type="text" placeholder="Enter Name" class="inp-field">
+    <button class="alert">Get Valus</button>
+    <ul class="list" style="margin: 0; padding: left;"></ul>
+    <button class="add-btn">Add Item</button>    
+    <p id="demo">Sarkar</p>
+    <button class="class-btn">Add Class</button>
+    <img src="cytr2.jpg" class="my-pic" alt="">
+    <button class="pic-btn">Change Pic</button>
+    <div class="box" style="width: 100px; height: 100px; background-color: blanchedalmond;"></div>
+    </body>
+    <script>
+        $(document).ready(function () {
+
+    $(".btn-hide").click(function () {
+        $(".main").hide();
+    });
+
+    $(".btn-show").click(function () {
+        $(".main").show();
+    });
+
+    $(".btn-toggle").click(function () {
+        $(".main").toggle();
+    });
+
+    $(".btn-fade-in").click(function () {
+        $(".main").fadeIn();
+    });
+
+    $(".btn-fade-out").click(function () {
+        $(".main").fadeOut();
+    });
+
+    $(".btn-fade-toggle").click(function () {
+        $(".main").fadeToggle();
+    });
+
+    $(".btn-side-up").click(function () {
+        $(".main").slideUp();
+    });
+
+    $(".btn-side-down").click(function () {
+        $(".main").slideDown();
+    });
+
+    $(".btn-side-toggle").click(function () {
+        $(".main").slideToggle();
+    });
+
+    $(".btn-change").click(function () {
+        $(".text-para").text("Syed Daniyal Shah");
+    });
+
+    
+    $(".btn-change-html").click(function () {
+        $(".text-bold").html("<i>HTML content changed!</i>");
+    });
+
+    $(".alert").click(function () {
+        alert($(".inp-field").val());
+    });
+    $(".pic-btn").click(function(){
+        $(".my-pic").attr("src","cer4.jpg");
+    });
+    $(".class-btn").click(function(){
+        $(".demo").addClass("green");
+    });
+    $(".add-btn").click(function(){
+        $(".list").append("<li>Dani<li>");
+    });
+    $(".box").hover(
+        function(){ $(this).css("background","green");},
+        function(){ $(this).css("background","lightblue");},
+    );
+});
+
+    </script>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@keyframes page{
+    0%{background-color: azure; left: 0px;top: 0px;}
+    25%{background-color: black; left: 200px;top: 0px;}
+    50%{background-color: blanchedalmond; left: 200px;top: 200px;}
+    75%{background-color: aquamarine; left: 0px;top: 200px;}
+    100%{background-color: blueviolet; left: 0px;top: 0px;}
+
+}
+@keyframes myanm1{
+    from{background-color: cadetblue;}
+    to{background-color: yellow;}
+
+}
+#div1{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    animation-name:page;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+
+}
+#div2{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    animation-name:myanm1;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    
+}
+
+</style>
+<body>
+    <div id="div1">
+        <h1>Div text</h1>
+    </div><br><br><br><br><br><br><br><br><br><br>
+    <div id="div2"></div>
+</body>
+</html>

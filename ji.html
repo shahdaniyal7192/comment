@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            background-color: cadetblue;
+            width: 100px;
+            height: 100px;
+            
+        }
+    </style>
+
+<script>
+function Sum() {
+    var input1= parseInt(document.getElementById("Num1").value);
+    var input2= parseInt(document.getElementById("Num2").value);
+    var output= input1 + input2;
+    document.getElementById('result').value=output;
+}
+function Sub() {
+    var input1= parseInt(document.getElementById("Num1").value);
+    var input2= parseInt(document.getElementById("Num2").value);
+    var output= input1 - input2;
+    document.getElementById('result').value=output;
+}
+function Mul() {
+    var input1= parseInt(document.getElementById("Num1").value);
+    var input2= parseInt(document.getElementById("Num2").value);
+    var output= input1 * input2;
+    document.getElementById('result').value=output;
+}
+function Div() {
+    var input1= parseInt(document.getElementById("Num1").value);
+    var input2= parseInt(document.getElementById("Num2").value);
+    var output= input1 / input2;
+    document.getElementById('result').value=output;
+}
+
+
+</script>
+<body>
+    <h2>Simple Calculator</h2>
+
+    <label for="Num1">Enter your fast number</label><br>
+    <input type="text" id="Num1" placeholder="first number"> <br><br> 
+
+     <label for="Num2">Enter your Second number</label><br>
+    <input type="text" id="Num2" placeholder="Second number"> <br><br> 
+
+    <label for="result">Result:</label><br>
+    <input type="text" id="result" readonly><br><br>
+
+    <button onclick="Sum()">Add</button>
+    <button onclick="Sub()">Sub</button>
+    <button onclick="Mul()">Mul</button>
+    <button onclick="Div()">Div</button>
+</body>
+</html>
