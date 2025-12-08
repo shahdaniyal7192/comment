@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slander Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+.logo{
+    margin-right: 600px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.top-nav .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.top-nav nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.hero {
+    background: #0ab7a4;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 50px;
+}
+
+.hero .left {
+    width: 45%;
+}
+
+.hero h1 {
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.hero p {
+    margin: 15px 0;
+}
+
+.btn-buy, .btn-learn {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-buy {
+    background: white;
+    color: #0ab7a4;
+}
+
+.btn-learn {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+
+.form-box {
+    background: #ffffff20;
+    padding: 20px;
+    width: 30%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.check {
+    font-size: 13px;
+    display: block;
+    margin: 8px 0;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: white;
+    color: #0ab7a4;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.features {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.features-btn {
+    margin: 20px 0;
+    padding: 12px 25px;
+    background: #0ab7a4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.feature-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.box {
+    width: 22%;
+    background: #0ab7a4;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+#icon{
+    color: aqua;
+    display: flex;
+    align-items: center;
+}
+#resbox{
+    color:white;
+    height: 100px;
+    width: 100px;
+}
+</style>
+<body>
+
+    
+<header class="top-nav">
+    <i class="fa-solid fa-square-pen" id="icon"></i>
+<div class="logo">SLANDER</div>
+     <nav>
+    <a href="#">About</a>
+     <a href="#">Services</a>
+     <a href="#">Contact</a>
+    </nav>
+    </header>
+
+    
+    <section class="hero">
+        <div class="left">
+         <h1>SLANDER<br>LANDING PAGE</h1>
+         <p>Smart bootstrap landing theme</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Maiores debitis rem ipsum nemo temporibus!</p>
+
+         <button class="btn-buy">BUY NOW</button>
+          <button class="btn-learn">LEARN MORE</button>
+        </div>
+
+        <div class="form-box">
+            <form>
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Last name">
+                <input type="email" placeholder="Email Address">
+                <input type="text" placeholder="Phone No">
+
+                <label class="check">
+                    <input type="checkbox"> I've read the terms and conditions
+                </label>
+
+                <button class="submit-btn">SUBMIT</button>
+            </form>
+        </div>
+    </section>
+
+    
+    <section class="features">
+        <h2>A Clean & Simple landing page for all type of websites</h2>
+        <p>Nullam quis elementum ligula. Sed neque neque...</p>
+        <button class="features-btn">CHECK MORE FEATURES</button>
+
+        <div class="feature-boxes">
+            <div class="box">
+            <i class="fa-solid fa-desktop" id="resbox"></i>
+                <h3>Responsive Design</h3>
+                <p>Sed dolor sit amet, blandit nec lacus dapibus</p>
+            </div>
+            <div class="box">
+                <h3>Quick Launch</h3>
+                <p>Sed dolor sit amet, blandit nec lacus dapibus</p>
+            </div>
+            <div class="box">
+                <h3>Clean Coded</h3>
+                <p>Sed dolor sit amet, blandit nec lacus dapibus</p>
+            </div>
+            <div class="box">
+                <h3>Clients Loving</h3>
+                <p>Sed dolor sit amet, blandit nec lacus dapibus</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
