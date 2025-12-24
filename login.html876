@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stylish Creative Forms</title>
+
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            min-height: 100vh;
+            background: radial-gradient(circle at top, #8b0000, #000);
+            color: #fff;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .main-title {
+            text-align: center;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+        }
+
+        .form-card {
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.6);
+        }
+
+        .form-control {
+            background: transparent;
+            border: 1px solid #aaa;
+            color: #fff;
+        }
+
+        .form-control::placeholder {
+            color: #ccc;
+        }
+
+        .form-control:focus {
+            background: transparent;
+            color: #fff;
+            border-color: #dc3545;
+            box-shadow: none;
+        }
+
+        .btn-custom {
+            background: #dc3545;
+            border: none;
+            width: 100%;
+        }
+
+        .btn-custom:hover {
+            background: #b52a37;
+        }
+
+        .social-icons i {
+            background: #fff;
+            color: #000;
+            padding: 10px;
+            margin: 0 5px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container py-5">
+    <h1 class="main-title">STYLISH CREATIVE FORMS</h1>
+
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="form-card">
+                <h4 class="text-center mb-4">LOGIN NOW</h4>
+
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text bg-transparent text-white">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                            <input type="email" class="form-control" placeholder="E-mail" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text bg-transparent text-white">
+                                <i class="fa fa-lock"></i>
+                            </span>
+                            <input type="password" class="form-control" placeholder="Password" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-custom">LOGIN</button>
+
+                    <div class="text-center mt-3">
+                        <a href="#" class="text-decoration-none text-light">Forgot Password?</a>
+                    </div>
+
+                    <p class="text-center mt-3">or</p>
+
+                    <div class="social-icons text-center">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+     
+        <div class="col-md-6">
+            <div class="form-card">
+                <h4 class="text-center mb-4">REGISTER NOW</h4>
+
+                <form id="registerForm">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="User Name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="E-mail" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="Password" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="Confirm Password" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-custom">REGISTER</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-text">
+        © 2025 Stylish Creative Forms | Design Inspired Layout
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+    document.getElementById("registerForm").addEventListener("submit", function(e) {
+        const inputs = this.querySelectorAll("input");
+        const password = inputs[2].value;
+        const confirmPassword = inputs[3].value;
+
+        if (password !== confirmPassword) {
+            e.preventDefault();
+            alert("Passwords do not match!");
+        }
+    });
+</script>
+
+</body>
+</html>
