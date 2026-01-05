@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Same Loader</title>
+</head>
+</style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#eee;
+}
+
+.card{
+  background:#f8f8f8;
+  padding:20px;
+  border-radius:12px;
+  width:220px;
+  text-align:center;
+}
+
+.btn{
+  width:100%;
+  padding:10px;
+  margin-bottom:10px;
+  border:none;
+  border-radius:6px;
+  background:#2f5d6b;
+  color:#fff;
+  cursor:pointer;
+}
+
+.box-wrapper{
+  position:relative;
+  width:90px;
+  height:90px;
+  margin:15px auto;
+}
+
+.box{
+  width:60px;
+  height:60px;
+  background:#0b6b5f;
+  border-radius:6px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  z-index:2;
+}
+
+/* ROTATING CIRCLE */
+.circle{
+  width:90px;
+  height:90px;
+  border:4px solid rgba(0,0,0,0.15);
+  border-top:4px solid #0b6b5f;
+  border-radius:50%;
+  position:absolute;
+  top:0;
+  left:0;
+}
+</style>
+<body>
+
+<div class="card">
+  <button class="btn">Switch Theme</button>
+  <button class="btn">Toggle Box</button>
+
+  <div class="box-wrapper">
+    <div class="circle"></div>
+    <div class="box"></div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  let deg = 0;
+
+  setInterval(function(){
+    deg += 4;   // same smooth speed like video
+    $('.circle').css('transform','rotate('+deg+'deg)');
+  },16); // 60fps smooth rotation
+
+});
+</script>
+</body>
+</html>
